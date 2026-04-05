@@ -1,0 +1,257 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, viewport-fit=cover">
+    <title>Noxcho | Чеченская кухня</title>
+    <link rel="stylesheet" href="style.css">
+    <!-- Google Fonts & Font Awesome -->
+    <link href="https://fonts.googleapis.com/css2?family=Inter:opsz,wght@14..32,300;14..32,400;14..32,500;14..32,600;14..32,700&family=Poppins:wght@400;500;600;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
+    <style>
+        /* Доп. стиль для менеджера — сохраняет glass-стиль */
+        .contact__manager {
+            margin-top: 20px;
+            padding: 12px 20px;
+            background: var(--card-bg);
+            backdrop-filter: var(--glass-blur);
+            border-radius: 60px;
+            display: inline-flex;
+            align-items: center;
+            gap: 10px;
+            font-size: 1rem;
+            border: 1px solid var(--card-border);
+            color: var(--text-primary);
+        }
+        .contact__manager i {
+            color: var(--accent-color);
+            font-size: 1.2rem;
+        }
+        .contact__manager strong {
+            color: var(--accent-color);
+        }
+    </style>
+</head>
+<body class="light-theme">
+    <div class="cursor-follower"></div>
+    
+    <header class="header glass">
+        <div class="container header__container">
+            <a href="#" class="logo">
+                <i class="fas fa-utensils"></i>
+                <span>Noxcho</span>
+            </a>
+            <nav class="nav">
+                <a href="#home" class="nav__link">Главная</a>
+                <a href="#dishes" class="nav__link">Блюда</a>
+                <a href="#about" class="nav__link">О нас</a>
+                <a href="#contact" class="nav__link">Контакты</a>
+            </nav>
+            <button class="theme-toggle" id="themeToggle" aria-label="Сменить тему">
+                <i class="fas fa-sun"></i>
+                <i class="fas fa-moon"></i>
+            </button>
+            <button class="mobile-menu-btn" id="mobileMenuBtn">
+                <i class="fas fa-bars"></i>
+            </button>
+        </div>
+    </header>
+
+    <main>
+        <!-- Hero секция -->
+        <section id="home" class="hero">
+            <div class="container hero__container">
+                <div class="hero__content fade-up">
+                    <h1 class="hero__title">Аутентичная <span class="accent">чеченская кухня</span></h1>
+                    <p class="hero__desc">Традиционные рецепты, передаваемые из поколения в поколение. Насладитесь вкусом Кавказа с доставкой на дом.</p>
+                    <div class="hero__buttons">
+                        <a href="#dishes" class="btn btn-primary">Смотреть меню <i class="fas fa-arrow-right"></i></a>
+                        <a href="tel:+79289401074" class="btn btn-outline">Заказать звонок</a>
+                    </div>
+                </div>
+                <div class="hero__image fade-up delay-1">
+                    <div class="glass-circle">
+                        <i class="fas fa-mountain"></i>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Блюда -->
+        <section id="dishes" class="dishes section">
+            <div class="container">
+                <div class="section__header fade-up">
+                    <span class="section__tag">Популярные блюда</span>
+                    <h2 class="section__title">Шедевры чеченской кухни</h2>
+                    <p class="section__subtitle">Приготовлены с душой по старинным рецептам</p>
+                </div>
+                <div class="dishes__grid">
+                    <div class="dish-card glass fade-up delay-1">
+                        <div class="dish-card__icon"><i class="fas fa-drumstick-bite"></i></div>
+                        <h3 class="dish-card__title">Жижиг-галнаш</h3>
+                        <p class="dish-card__desc">Отварное мясо с домашней лапшой и чесночным соусом.</p>
+                        <div class="dish-card__price">650 ₽</div>
+                        <a href="tel:+79289401074" class="btn btn-order">Заказать <i class="fas fa-shopping-cart"></i></a>
+                    </div>
+                    <div class="dish-card glass fade-up delay-2">
+                        <div class="dish-card__icon"><i class="fas fa-bread-slice"></i></div>
+                        <h3 class="dish-card__title">Чепалгаш</h3>
+                        <p class="dish-card__desc">Лепёшки с творогом и зеленью, обжаренные на сухой сковороде.</p>
+                        <div class="dish-card__price">320 ₽</div>
+                        <a href="tel:+79289401074" class="btn btn-order">Заказать <i class="fas fa-shopping-cart"></i></a>
+                    </div>
+                    <div class="dish-card glass fade-up delay-3">
+                        <div class="dish-card__icon"><i class="fas fa-utensil-spoon"></i></div>
+                        <h3 class="dish-card__title">Дулх-халтам</h3>
+                        <p class="dish-card__desc">Ароматная баранина с овощами и специями, тушёная в горшочке.</p>
+                        <div class="dish-card__price">780 ₽</div>
+                        <a href="tel:+79289401074" class="btn btn-order">Заказать <i class="fas fa-shopping-cart"></i></a>
+                    </div>
+                    <div class="dish-card glass fade-up delay-4">
+                        <div class="dish-card__icon"><i class="fas fa-fish"></i></div>
+                        <h3 class="dish-card__title">Сискал</h3>
+                        <p class="dish-card__desc">Нежная форель, запечённая с травами и кисло-сладким соусом.</p>
+                        <div class="dish-card__price">890 ₽</div>
+                        <a href="tel:+79289401074" class="btn btn-order">Заказать <i class="fas fa-shopping-cart"></i></a>
+                    </div>
+                    <div class="dish-card glass fade-up delay-5">
+                        <div class="dish-card__icon"><i class="fas fa-bowl-food"></i></div>
+                        <h3 class="dish-card__title">Хингалш</h3>
+                        <p class="dish-card__desc">Кукурузные лепёшки с тушёной говядиной и чесночным соусом.</p>
+                        <div class="dish-card__price">550 ₽</div>
+                        <a href="tel:+79289401074" class="btn btn-order">Заказать <i class="fas fa-shopping-cart"></i></a>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- О нас -->
+        <section id="about" class="about section">
+            <div class="container">
+                <div class="about__wrapper">
+                    <div class="about__content fade-up">
+                        <span class="section__tag">Почему мы</span>
+                        <h2 class="section__title">Готовим с 1985 года</h2>
+                        <p class="about__text">Мы бережно храним традиции чеченской кухни и используем только свежие, фермерские продукты.</p>
+                        <div class="features">
+                            <div class="feature"><i class="fas fa-check-circle"></i><span>Только халяльное мясо</span></div>
+                            <div class="feature"><i class="fas fa-leaf"></i><span>Домашние специи и зелень</span></div>
+                            <div class="feature"><i class="fas fa-clock"></i><span>Доставка за 45–60 минут</span></div>
+                        </div>
+                    </div>
+                    <div class="about__stats fade-up delay-1">
+                        <div class="stat-card glass"><span class="stat-number">35+</span><span class="stat-label">блюд в меню</span></div>
+                        <div class="stat-card glass"><span class="stat-number">4.9</span><span class="stat-label">рейтинг</span></div>
+                        <div class="stat-card glass"><span class="stat-number">1200+</span><span class="stat-label">счастливых гостей</span></div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Контакты и заказ (с менеджером Лайлаъ) -->
+        <section id="contact" class="contact section">
+            <div class="container">
+                <div class="contact__card glass fade-up">
+                    <div class="contact__info">
+                        <i class="fas fa-phone-alt"></i>
+                        <h3>Закажите сейчас</h3>
+                        <p class="contact__phone">
+                            <a href="tel:+79289401074">8 (928) 940-10-74</a>
+                        </p>
+                        <p>Работаем ежедневно с 10:00 до 22:00</p>
+                        <!-- МЕНЕДЖЕР ЛАЙЛАЪ -->
+                        <div class="contact__manager">
+                            <i class="fas fa-user-tie"></i>
+                            <span>Ваш менеджер: <strong>Лайлаъ</strong></span>
+                        </div>
+                        <div class="contact__socials">
+                            <a href="#"><i class="fab fa-whatsapp"></i></a>
+                            <a href="#"><i class="fab fa-telegram"></i></a>
+                            <a href="#"><i class="fab fa-instagram"></i></a>
+                        </div>
+                    </div>
+                    <div class="contact__action">
+                        <a href="tel:+79289401074" class="btn btn-primary btn-large">Позвонить и заказать <i class="fas fa-phone"></i></a>
+                        <p class="contact__note">* Доставка бесплатно при заказе от 1500 ₽</p>
+                    </div>
+                </div>
+            </div>
+        </section>
+    </main>
+
+    <footer class="footer">
+        <div class="container footer__container">
+            <div class="footer__brand">
+                <i class="fas fa-utensils"></i> Noxcho
+                <p>Аутентичная чеченская кухня с доставкой.</p>
+            </div>
+            <div class="footer__links">
+                <a href="#home">Главная</a>
+                <a href="#dishes">Меню</a>
+                <a href="#about">О нас</a>
+            </div>
+            <div class="footer__copy">
+                © 2025 Noxcho. Все права защищены.
+            </div>
+        </div>
+    </footer>
+
+    <script>
+        const themeToggle = document.getElementById('themeToggle');
+        const body = document.body;
+        const savedTheme = localStorage.getItem('theme');
+        if (savedTheme) {
+            body.classList.add(savedTheme);
+            body.classList.remove(savedTheme === 'dark-theme' ? 'light-theme' : 'dark-theme');
+        } else {
+            body.classList.add('light-theme');
+        }
+        function setTheme(theme) {
+            body.classList.remove('light-theme', 'dark-theme');
+            body.classList.add(theme);
+            localStorage.setItem('theme', theme);
+        }
+        themeToggle.addEventListener('click', () => {
+            if (body.classList.contains('light-theme')) setTheme('dark-theme');
+            else setTheme('light-theme');
+        });
+        
+        const fadeElements = document.querySelectorAll('.fade-up');
+        const observer = new IntersectionObserver((entries) => {
+            entries.forEach(entry => {
+                if (entry.isIntersecting) {
+                    entry.target.classList.add('visible');
+                    observer.unobserve(entry.target);
+                }
+            });
+        }, { threshold: 0.1, rootMargin: '0px 0px -30px 0px' });
+        fadeElements.forEach(el => observer.observe(el));
+        
+        const mobileBtn = document.getElementById('mobileMenuBtn');
+        const nav = document.querySelector('.nav');
+        if (mobileBtn) {
+            mobileBtn.addEventListener('click', () => {
+                nav.classList.toggle('nav--open');
+                const icon = mobileBtn.querySelector('i');
+                if (nav.classList.contains('nav--open')) {
+                    icon.classList.remove('fa-bars');
+                    icon.classList.add('fa-times');
+                } else {
+                    icon.classList.remove('fa-times');
+                    icon.classList.add('fa-bars');
+                }
+            });
+        }
+        document.querySelectorAll('.nav__link').forEach(link => {
+            link.addEventListener('click', () => {
+                nav.classList.remove('nav--open');
+                if (mobileBtn) {
+                    const icon = mobileBtn.querySelector('i');
+                    icon.classList.remove('fa-times');
+                    icon.classList.add('fa-bars');
+                }
+            });
+        });
+    </script>
+</body>
+</html>
